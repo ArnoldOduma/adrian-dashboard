@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,400;0,700;1,900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.ticketing-section {
+    font-family: 'Nunito', sans-serif;
+    color: #707071;
+
+    padding: 20px 20px 0 20px;
+}
+
+.ticketing-top-cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+
+.ticketing-top-cards > div {
+    /*height: 100px;*/
+    width: 24%;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.51);
+    margin: 0 0 20px 0;
+}
+
+.ticketing-top-cards > div > div {
+    width: 100px;
+    height: 100px;
+    background: green;
+    border-radius: 10px;
+    float: left;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-right: 10px;
+}
+
+.ticketing-top-cards > div:nth-child(1) div {
+    background: rgba(170, 210, 10, 0.5);
+}
+
+.ticketing-top-cards > div:nth-child(2) div {
+    background: rgba(236, 176, 23, 0.5);
+}
+
+.ticketing-top-cards > div:nth-child(3) div {
+    background: rgba(255, 61, 0, 0.5);
+}
+
+.ticketing-top-cards > div:nth-child(4) div {
+    background: rgba(210, 10, 190, 0.51);
+}
+
+.ticketing-top-cards > div > div img {
+    width: 60%;
+    justify-content: center;
+    align-self: center;
+    justify-self: center;
+}
+
+.ticketing-top-cards > div p {
+    font-weight: bold;
+    padding-top: 15px;
+}
+
+.ticketing-top-cards > div > b {
+    font-size: 40px;
+    font-weight: 100;
+    color: #000000;
+}
+
+.ticketing-dash-cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.ticketing-dash-cards > div {
+    max-width: 100%;
+}
+
+.ticketing-dash-cards h4 {
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.ticketing-dash-cards > div:nth-child(1) {
+    width: 70%;
+}
+
+.ticketing-dash-cards > div:nth-child(2) {
+    width: 28%;
+}
+
+.ticketing-dash-cards > div > div {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.51);
+    border-radius: 10px;
+    width: 100%;
+    padding: 20px;
+    margin: 0 0 20px 0;
+    min-height: 300px;
+}
+
+.ticket-details ul li {
+    list-style-type: none;
+    border-bottom: 1px solid #CCCCCC;
+    padding: 15px 5px;
+    font-size: 15px;
+}
+
+.ticket-details ul li b {
+    float: right;
+}
+
+@media only screen and (max-width: 950px) {
+
+
+    .ticketing-top-cards > div {
+        min-width: 49%;
+    }
+
+    .ticketing-dash-cards > div {
+        width: 100% !important;
+    }
+
+}
+
+@media only screen and (max-width: 650px) {
+    .ticketing-section {
+        padding: 20px 2%;
+    }
+
+    .ticketing-top-cards > div {
+        width: 100%;
+    }
+}

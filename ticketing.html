@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.css">
+    <title>Title</title>
+</head>
+<body>
+
+<section class="ticketing-section">
+
+    <div class="ticketing-top-cards">
+        <div>
+            <div><img src="./assets/icons/all.svg" alt="all"></div>
+            <p>All tickets</p>
+            <!--TODO: fill with actual data-->
+            <b>230</b>
+
+        </div>
+        <div>
+            <div><img src="./assets/icons/open.svg" alt="open" ></div>
+            <p>Open tickets</p>
+            <!--TODO: fill with actual data-->
+            <b>40</b>
+        </div>
+        <div>
+            <div><img src="./assets/icons/upload.svg" alt="progress"></div>
+            <p>In progress</p>
+            <!--TODO: fill with actual data-->
+            <b>54</b>
+        </div>
+        <div>
+            <div><img src="./assets/icons/closed.svg" alt="closed"></div>
+            <p>Closed tickets</p>
+            <!--TODO: fill with actual data-->
+            <b>89</b>
+        </div>
+    </div>
+
+    <div class="ticketing-dash-cards">
+<!--        TODO Fit charts here-->
+        <div class="trends">
+            <div>
+                <h4> Today's Trends</h4>
+                <!--TODO: Fill with actual data-->
+                <p>As of 7th sep 2020: 1245 PM</p>
+                <canvas id="trendsChart" width="100%" height="100%"></canvas>
+            </div>
+            <div class="fault-types">
+                <h4>Fault Types</h4>
+                <canvas id="faultChart" width="100%" height="100%"></canvas>
+            </div>
+        </div>
+        <div>
+            <div class="ticket-details">
+                <!--Remember ticket numbers should be links-->
+
+                <ul>
+                    <li>
+                        Unassigned
+                        <b>389</b>
+                    </li>
+                    <li>
+                        Assigned
+                        <b>478</b>
+                    </li>
+                    <li>
+                        Average First Response Time
+                        <b>30min</b>
+                    </li>
+                    <li>
+                        Average Response time
+                        <b>40min</b>
+                    </li>
+                    <li>
+                        Resolution with SLA
+                        <b>90%</b>
+                    </li>
+
+                </ul>
+            </div>
+            <div class="ticket-details">
+                <h4>Ticket Details</h4>
+                <ul>
+                    <li>
+                        Unresolved
+                        <b>389</b>
+                    </li>
+                    <li>
+                        Resolved
+                        <b>478</b>
+                    </li>
+                    <li>
+                        Awaiting Technical Fix
+                        <b>30</b>
+                    </li>
+                    <li>
+                        Awaiting Assignment
+                        <b>40m</b>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+
+<script type="application/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+<script type="application/javascript" src="ticketing-script.js"></script>
+</body>
+</html>
